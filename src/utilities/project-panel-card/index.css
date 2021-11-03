@@ -11,6 +11,10 @@
     right: 0.75rem;
 }
 
+.kanban-list-body .card-body {
+    min-height: 130px;
+}
+
 .kanban-list-body span{
     display:inline-block;
 }
