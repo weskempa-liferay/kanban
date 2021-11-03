@@ -1,4 +1,4 @@
-# kanban Fragments
+# Kanban Fragments
 
 Talk for Dev/24 - More details to added soon!
 
@@ -13,6 +13,6 @@ Object Needs the Fields
 - Task Status (Picklist)
 - Progress (Integer)
 
-## build
+## Build fragment bundle
 
 npm run compress
