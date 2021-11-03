@@ -1,62 +1,105 @@
-[#assign assetEntry = "" /]
-[#assign ns = fragmentEntryLinkNamespace /]
+$(".kanban-list-body .dropdown-item").off('click').on('click', function(e){  
 
-[#assign infoListDisplayObject = (request.getAttribute("INFO_LIST_DISPLAY_OBJECT"))! /]
-[#assign objectEntryId = 0 /]
+    var objectId = $(this).closest(".card-task").data("objectid")
+    var action =  $(event.target).attr("id");
+    
+    if(action.indexOf("status")>-1){
+        status = action.replaceAll("status-","");
+    }else{
+        return;
+    }
+    
+    payload = '{"taskStatus": "'+status+'" }';
 
-[#if infoListDisplayObject?has_content]
-	[#assign objectEntryId = infoListDisplayObject.getObjectEntryId() /]
-[/#if]
+    submitTaskUpdate(objectId, payload);
+});
 
-<div class="kanban-list-body">
-    <div data-objectid="${objectEntryId}" id="task[${ns}]" class="card card-task">
-        <div class="progress">
-            <div
-            	class="progress-bar bg-success"
-							role="progressbar"
-              style="width: 0%"
-              aria-valuenow="10"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-            </div>
-        </div>
+function callService( action, objectId ){
 
-        <div class="card-body">
-            <div class="project-head">
-                <h5 onclick="getLink()">
-									<lfr-editable id="task-title" type="rich-text">
-											Task title not mapped
-									</lfr-editable>
-	
-                </h5>
-                <div class="dropdown card-options">
-                    <button
-                            class="btn-options"
-                            type="button"
-                            id="project-dropdown-button-4"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                    >
+    Liferay.Util.fetch(
+        "/o/c/tasks/"+objectId, {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json; charset=utf8'
+            },
+            method: 'PUT',
+            body: '{"taskStatus": "'+status+'"}'
+        }
+    )
+    .then((response) => response.json()) 
+    .then((data) => {
+        //console.log("Return");
+        //console.log(data);
+        location.reload();
+    })
+    .catch((error) => {
+        console.log(error);
+        Liferay.Util.openToast({
+            message: 'An error occured.',
+            type: 'danger',
+        });
+    });
+    submitTaskUpdate(objectId, payload)
+}
 
-                        [@liferay_ui.icon icon="ellipsis-v" markupView="lexicon" /]
+function submitTaskUpdate(objectId, payload){
+    
+    Liferay.Util.fetch(
+        "/o/c/tasks/"+objectId, {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json; charset=utf8'
+            },
+            method: 'PUT',
+            body: payload
+        }
+    )
+    .then((response) => response.json()) 
+    .then((data) => {
+        //console.log("Return");
+        //console.log(data);
+        location.reload();
+    })
+    .catch((error) => {
+        console.log(error);
+        Liferay.Util.openToast({
+            message: 'An error occured.',
+            type: 'danger',
+        });
+    });
+}
 
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" style="">
-                        <a class="dropdown-item" id="view" href="#">View Task</a>
-                        <a class="dropdown-item" id="status-todo" href="#">Mark ToDo</a>
-                        <a class="dropdown-item" id="status-inprogress" href="#">Mark as In Progress</a>
-                        <a class="dropdown-item" id="status-done" href="#">Mark Done</a>
-                    </div>
-                </div>
 
-            </div>
-            <div class="project-details">
-				<lfr-editable id="task-description" type="rich-text">
-                    <p>Task description not mapped</p>
-			    </lfr-editable>
-            </div>
-        </div>
-    </div>
-</div>
+// Progress Handling //
+
+$(".kanban-list-body .progress-value").each(function(){
+
+    let progessValue = $(this).text().trim();
+    $(this).closest(".card-task").find(".progress-bar").css("width",progessValue+"%");
+
+});
+
+$(".kanban-list-body .progress").off('click').on('click', function(e){
+
+    var objectId = $(this).closest(".card-task").data("objectid")
+
+    let width = $(this).width();
+    let clickX = e.offsetX;
+    let progressCalc = Math.floor((clickX/width)*100);
+
+    //console.log(width+":"+clickX+":"+((clickX/width)));
+
+    updateProgress( progressCalc, objectId );
+});
+function updateProgress( progress, objectId ){
+        
+    if(progress > 95){
+        progress = 100;
+
+        payload = '{"taskStatus": "done", "progress": "'+progress+'"}';
+    } else {
+        payload = '{"progress": "'+progress+'" }';
+    }
+    submitTaskUpdate(objectId, payload);
+
+}
