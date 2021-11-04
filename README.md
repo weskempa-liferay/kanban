@@ -50,6 +50,10 @@ Import into site fragments
 * Add the Kanban Fragement to the Collection Display
 * Map the fields to the Title, Description, and Progress of the object within the Collection Display
 
-## Load enough content so that each column has a todo. 
+## Load content
 
-## Contribute. Would love to hear comments and suggestions to make it better or provide more options!
+Load enough content so that each column has a todo. Empty columns have an issue, breaking the layout.
+
+## Contribute! 
+
+Would love to hear comments and suggestions to make it better or provide more options!
