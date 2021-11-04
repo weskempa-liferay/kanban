@@ -11,10 +11,6 @@ In this session, we will build a functional application that demonstrates Lifera
 
 *Let’s build great things together!!*
 
-## Initial Presentation
-
-https://liferay.slack.com/files/U0176BBM8TE/F02JHSKQERF/liferay-74-initialthoughts.mp4
-
 # Setup
 
 ## Liferay Object
