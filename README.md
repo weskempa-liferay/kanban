@@ -17,16 +17,24 @@ https://liferay.slack.com/files/U0176BBM8TE/F02JHSKQERF/liferay-74-initialthough
 
 # Setup
 
-Object needs a picklist
+1. Task Object needs a picklist, "Task Status"
 
-- Task Status (todo, inprogress, done)
+| Field       | Key         |
+| :---        | :---        |
+| todo        | todo        |
+| inprogress  | inprogress  |
+| done        | done        |
 
-Object Needs the Fields
+2. Create Task Object
 
-- Task Title (String)
-- Task Description (String)
-- Task Status (Picklist)
-- Progress (Integer)
+3. Object Needs the Fields
+
+| Field             | Type            | Required  |
+| :---              |      :----:     |  :----:   |
+| Task Title        | String          | Yes       |
+| Task Description  | String          | No        |
+| Task Status       | Picklist        | Yes       |
+| Progress          | Progress        | No        |
 
 ## Build fragment bundle
 
