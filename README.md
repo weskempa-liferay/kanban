@@ -17,6 +17,8 @@ https://liferay.slack.com/files/U0176BBM8TE/F02JHSKQERF/liferay-74-initialthough
 
 # Setup
 
+## Liferay Object
+
 1. Task Object needs a picklist, "Task Status"
 
 | Field       | Key         |
@@ -39,3 +41,9 @@ https://liferay.slack.com/files/U0176BBM8TE/F02JHSKQERF/liferay-74-initialthough
 ## Build fragment bundle
 
 npm run compress
+
+Import into site fragments
+
+## Page Setup
+
+Using Collections Displays and Collection Providers create 3 columns to filter on the status and "todo", "inprogress", "done".
