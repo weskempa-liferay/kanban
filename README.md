@@ -1,6 +1,7 @@
 # Kanban Fragment for Liferay Objects
 
-## Talk for Dev/24 [https://youtu.be/PSxgzOfDe1Y?t=38818]
+## Talk for Dev/24 - [link to presentation](https://youtu.be/PSxgzOfDe1Y?t=38818)
+### [Link to Slides](https://docs.google.com/presentation/d/1hMpv10iZphf0h6STao6ODHY1w51lTNivxs61GJbLW5c)
 
 Liferay continues to invest in features that make low-code development possible. Using Liferay Objects, Collections, Forms, and Fragments, teams can quickly make fully functional systems that are more powerful and require less customization than ever before!
 
@@ -8,7 +9,7 @@ Since App Builder is deprecated (and fully removed) within the 7.4 release, Life
 
 In this session, we will build a functional application that demonstrates Liferay’s ability to deliver value quickly and overcome the historical need to spend days of development creating service builder entities, CRUD UIs, integration with Liferay’s asset frameworks, and creating custom rest endpoints. Liferay Objects are automatically integrated with other Liferay Frameworks like Workflow, Permissions, Asset so that they can be immediately used alongside any out-of-the-box capabilities. It seems unbelievable to many! The great news is that it is not only possible in 7.4, but you can do it too!
 
-Let’s build great things together!!
+*Let’s build great things together!!*
 
 ## Initial Presentation
 
