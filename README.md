@@ -46,4 +46,10 @@ Import into site fragments
 
 ## Page Setup
 
-Using Collections Displays and Collection Providers create 3 columns to filter on the status and "todo", "inprogress", "done".
+* Using Collections Displays and Collection Providers create 3 columns and filter on the status and "todo", "inprogress", "done".
+* Add the Kanban Fragement to the Collection Display
+* Map the fields to the Title, Description, and Progress of the object within the Collection Display
+
+## Load enough content so that each column has a todo. 
+
+## Contribute. Would love to hear comments and suggestions to make it better or provide more options!
