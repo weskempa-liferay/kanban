@@ -1,6 +1,6 @@
 # Kanban Fragments
 
-##Talk for Dev/24 [https://youtu.be/PSxgzOfDe1Y?t=38818]
+## Talk for Dev/24 [https://youtu.be/PSxgzOfDe1Y?t=38818]
 
 Liferay continues to invest in features that make low-code development possible. Using Liferay Objects, Collections, Forms, and Fragments, teams can quickly make fully functional systems that are more powerful and require less customization than ever before!
 
@@ -10,7 +10,7 @@ In this session, we will build a functional application that demonstrates Lifera
 
 Let’s build great things together!!
 
-##Initial Presentation
+## Initial Presentation
 
 https://liferay.slack.com/files/U0176BBM8TE/F02JHSKQERF/liferay-74-initialthoughts.mp4
 
