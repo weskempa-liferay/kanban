@@ -1,4 +1,4 @@
-# Kanban Fragments
+# Kanban Fragment for Liferay Objects
 
 ## Talk for Dev/24 [https://youtu.be/PSxgzOfDe1Y?t=38818]
 
