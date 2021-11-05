@@ -11,7 +11,7 @@ In this session, we will build a functional application that demonstrates Lifera
 
 *Let’s build great things together!!*
 
-# Setup
+# 7.4 Setup
 
 ## Liferay Object
 
@@ -39,6 +39,12 @@ In this session, we will build a functional application that demonstrates Lifera
 npm run compress
 
 Import into site fragments
+
+## Server configuration
+
+*Note: Current version required jquery for event handling, dom traversal, and dropdown behavior.*
+
+Enable jQuery in "System Settings" > "Third Party" > "jQuery"
 
 ## Page Setup
 
