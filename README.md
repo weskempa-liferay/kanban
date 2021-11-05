@@ -38,7 +38,7 @@ In this session, we will build a functional application that demonstrates Lifera
 
 npm run compress
 
-Import into site fragments
+Import /kanban-main/build/liferay-fragments.zip into site fragments.
 
 ## jQuery Configuration
 
