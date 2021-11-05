@@ -2,7 +2,7 @@
 [#assign objectEntryId = 0 /]
 
 [#if infoListDisplayObject?has_content]
-[#assign objectEntryId = infoListDisplayObject.getObjectEntryId() /]
+    [#assign objectEntryId = infoListDisplayObject.getObjectEntryId() /]
 [/#if]
 
 <div class="kanban-list-body">
@@ -31,7 +31,7 @@
                     <button
                             class="btn-options"
                             type="button"
-                            id="project-dropdown-button-4"
+                            id="project-dropdown-button"
                             data-toggle="dropdown"
                             aria-haspopup="true"
                             aria-expanded="false"
