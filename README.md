@@ -34,13 +34,13 @@ In this session, we will build a functional application that demonstrates Lifera
 | Task Status       | Picklist        | Yes       |
 | Progress          | Progress        | No        |
 
-## Build fragment bundle
+## Build Fragment Bundle
 
 npm run compress
 
 Import into site fragments
 
-## Server configuration
+## jQuery Configuration
 
 *Note: Current version required jquery for event handling, dom traversal, and dropdown behavior.*
 
