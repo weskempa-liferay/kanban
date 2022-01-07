@@ -32,7 +32,7 @@ In this session, we will build a functional application that demonstrates Lifera
 | Task Title        | String          | Yes       |
 | Task Description  | String          | No        |
 | Task Status       | Picklist        | Yes       |
-| Progress          | Progress        | No        |
+| Progress          | Integer         | No        |
 
 ## Build Fragment Bundle
 
