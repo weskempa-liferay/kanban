@@ -1,6 +1,6 @@
 # Kanban Fragment for Liferay Objects
 
-## Talk for Dev/24 - [link to presentation](https://youtu.be/PSxgzOfDe1Y?t=38818)
+## Talk for Dev/24
 ### [Link to Slides](https://docs.google.com/presentation/d/1hMpv10iZphf0h6STao6ODHY1w51lTNivxs61GJbLW5c)
 
 Liferay continues to invest in features that make low-code development possible. Using Liferay Objects, Collections, Forms, and Fragments, teams can quickly make fully functional systems that are more powerful and require less customization than ever before!
