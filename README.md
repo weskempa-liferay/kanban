@@ -51,12 +51,12 @@ Enable jQuery in "System Settings" > "Third Party" > "jQuery"
 * Using Collections Displays and Collection Providers create 3 columns and filter on the status and "todo", "inprogress", "done".
 * Add the Kanban Fragement to the Collection Display
 * Map the fields to the Title, Description, ID, and Progress of the object within the Collection Display
-
-![Mapping](./screenshots/mapping1.png)
+   ![Mapping](./screenshots/mapping1.png)
+* Finally, set the grid Overflow to Visible so that the tooltips show properly.
 
 ## Load content
 
-Load enough content so that each column has a todo. Empty columns have an issue, breaking the layout.
+Load enough content so that each column has a todo. 
 
 ## Contribute! 
 
