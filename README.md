@@ -52,7 +52,7 @@ Enable jQuery in "System Settings" > "Third Party" > "jQuery"
 * Add the Kanban Fragement to the Collection Display
 * Map the fields to the Title, Description, ID, and Progress of the object within the Collection Display
 
-![Mapping](./screenshots/mapping.png)
+![Mapping](./screenshots/mapping1.png)
 
 ## Load content
 
