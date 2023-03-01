@@ -15,7 +15,7 @@ In this session, we will build a functional application that demonstrates Lifera
 
 ## Liferay Object
 
-1. Task Object needs a picklist, "Task Status"
+1. Task Object needs a picklist, "Task Status".
 
 | Field       | Key         |
 | :---        | :---        |
@@ -23,9 +23,9 @@ In this session, we will build a functional application that demonstrates Lifera
 | inprogress  | inprogress  |
 | done        | done        |
 
-2. Create Task Object
+2. Create an object with the name "Task".
 
-3. Object Needs the Fields
+3. Add the following fields to the object.
 
 | Field             | Type            | Required  |
 | :---              |      :----:     |  :----:   |
@@ -36,7 +36,7 @@ In this session, we will build a functional application that demonstrates Lifera
 
 ## Build Fragment Bundle
 
-npm run compress
+npm run compress (Requires installation of [yoman](https://yeoman.io/codelab/setup.html) and [generator-liferay-fragments](https://www.npmjs.com/package/generator-liferay-fragments))
 
 Import /kanban-main/build/liferay-fragments.zip into site fragments.
 
