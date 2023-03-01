@@ -1,12 +1,5 @@
-[#assign infoListDisplayObject = (request.getAttribute("INFO_LIST_DISPLAY_OBJECT"))! /]
-[#assign objectEntryId = 0 /]
-
-[#if infoListDisplayObject?has_content]
-    [#assign objectEntryId = infoListDisplayObject.getObjectEntryId() /]
-[/#if]
-
 <div class="kanban-list-body">
-    <div data-objectid="${objectEntryId}" class="card card-task">
+    <div class="card card-task">
         <div class="progress">
             <div
                     class="progress-bar bg-success"
@@ -41,7 +34,7 @@
 
                     </button>
                     <div class="dropdown-menu dropdown-menu-right" style="">
-                        <a class="dropdown-item" id="view" href="#">View Task</a>
+                        <!--<a class="dropdown-item" id="view" href="#">View Task</a>-->
                         <a class="dropdown-item" id="status-todo" href="#">Mark ToDo</a>
                         <a class="dropdown-item" id="status-inprogress" href="#">Mark as In Progress</a>
                         <a class="dropdown-item" id="status-done" href="#">Mark Done</a>
@@ -50,14 +43,21 @@
 
             </div>
             <div class="row">
-                <div class="col-10">
+                <div class="col-8">
                     <div class="project-details">
                         <lfr-editable id="task-description" type="rich-text">
                             <p>Task description not mapped</p>
                         </lfr-editable>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-2 option">ID:
+                    <span class="object-id">
+                        <lfr-editable id="task-id" type="text">
+                            0
+                        </lfr-editable>
+                    </span>
+                </div>
+                <div class="col-2 option">
                     <span class="progress-value">
                         <lfr-editable id="task-progress" type="text">
                             0

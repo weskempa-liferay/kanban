@@ -1,6 +1,6 @@
 $(".kanban-list-body .dropdown-item").off('click').on('click', function(e){  
 
-    var objectId = $(this).closest(".card-task").data("objectid")
+    var objectId = $(this).closest(".card-task").find(".object-id").text().trim();
     var action =  $(event.target).attr("id");
     
     if(action.indexOf("status")>-1){
@@ -51,7 +51,7 @@ $(".kanban-list-body .progress-value").each(function(){
 });
 
 $(".kanban-list-body .progress").off('click').on('click', function(e){
-    var objectId = $(this).closest(".card-task").data("objectid")
+    var objectId = $(this).closest(".card-task").find(".object-id").text().trim();
 
     let width = $(this).width();
     let clickX = e.offsetX;

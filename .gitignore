@@ -3,3 +3,5 @@ src/.idea/misc.xml
 src/.idea/modules.xml
 src/.idea/src.iml
 src/.idea/vcs.xml
+package-lock.json
+node_modules/*
