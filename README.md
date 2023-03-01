@@ -29,9 +29,9 @@ In this session, we will build a functional application that demonstrates Lifera
 
 | Field             | Type            | Required  |
 | :---              |      :----:     |  :----:   |
-| Task Title        | String          | Yes       |
+| Task Title        | String          | No        |
 | Task Description  | String          | No        |
-| Task Status       | Picklist        | Yes       |
+| Task Status       | Picklist        | No        |
 | Progress          | Integer         | No        |
 
 ## Build Fragment Bundle
