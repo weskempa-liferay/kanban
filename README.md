@@ -50,7 +50,9 @@ Enable jQuery in "System Settings" > "Third Party" > "jQuery"
 
 * Using Collections Displays and Collection Providers create 3 columns and filter on the status and "todo", "inprogress", "done".
 * Add the Kanban Fragement to the Collection Display
-* Map the fields to the Title, Description, and Progress of the object within the Collection Display
+* Map the fields to the Title, Description, ID, and Progress of the object within the Collection Display
+
+![Mapping](./screenshots/mapping.png)
 
 ## Load content
 
